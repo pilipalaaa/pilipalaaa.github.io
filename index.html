@@ -1,3 +1,194 @@
-My first page
-pages 
-pages
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>页面标题</title>
+</head>
+<body>
+    <img src="https://mdbootstrap.com/img/logo/mdb192x192.jpg" alt="MDB Logo" width="200" height="200">
+  <h1>我的第一个Web页</h1>
+  <p>当前有点丑：)</p>
+  <!-- 带属性的段落输入框 -->
+  <p title="这是个title属性">鼠标移上来试试！</p>
+  <!-- 带属性的输入框 -->
+  <input type="text">
+  <input type="password">
+  <h1>This is heading 1</h1>
+  <p>This is some text.</p>
+  <hr>
+  <h2>This is heading 2</h2>
+  <p>This is some other text.</p>
+  <hr>
+  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+  <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+  <p><u>This line of text will render as underlined</u></p>
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+  <p><strong>This line rendered as bold text.</strong></p>
+  <p><em>This line rendered as italicized text.</em></p>
+  <a href="https://www.baidu.com/" target="_blank">百度一下</a>
+  <!-- 文档其余部分 -->
+  <h2 id="C4">第四章 论零号病人的重要性</h2>
+  <!-- 文档其余部分 -->
+  <a href="#C4">跳到第四章</a>
+  <!-- 文档其余部分 -->
+  ...
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <ul type="square">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <ol type="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <form>
+    <!-- 文本框，注意有 placeholder 提示符 -->
+    用户名：<br>
+    <input type="text" name="name" placeholder="请输入用户名"><br>
+    <!-- 密码框 -->
+    密码：<br>
+    <input type="password" name="ps" placeholder="请输入密码"><br>
+    年龄：<br>
+    <!-- 数字输入框，注意 min 和 value 属性-->
+    <input type="number" name="age" min="0" value="18"><br>
+    <!-- 单选按钮, 注意 checked 属性 -->
+    性别：<br>
+    <input type="radio" name="gender" value="male" checked> 男<br>
+    <input type="radio" name="gender" value="female"> 女<br>
+    <input type="radio" name="gender" value="other"> 其它<br>
+    <!-- 下拉列表，注意 selected 属性 -->
+    党派：<br>
+    <select name="party">
+      <option value="D">民主党</option>
+      <option value="R" selected>共和党</option>
+      <option value="N">无党派</option>
+    </select><br>
+    <!-- 多选框 -->
+    您有哪些交通工具：<br>
+    <input type="checkbox" name="vehicle1" value="Bike"> 自行车<br>
+    <input type="checkbox" name="vehicle2" value="Motocycle" checked> 摩托车<br>
+    <input type="checkbox" name="vehicle3" value="Car"> 轿车<br>
+    <input type="checkbox" name="vehicle4" value="Jet"> 飞机<br>
+    <!-- 日期选择器 -->
+    您的工作日期：<br>
+    <input type="date"><br>
+    <!-- 文件选择器 -->
+    上传您的照片:<br>
+    <input type="file" name="photo"><br>
+    <!-- 文本输入区域，注意 rows 和 cols 属性 -->
+    您的建议：<br>
+    <textarea name="message" rows="5" cols="30">
+      The cat was playing in the garden.
+    </textarea><br><hr>
+    <!-- 表单提交/重置按钮，将表单中的数据取消或传输给服务器端进行处理 -->
+    <input type="submit" value="提 交">
+    <input type="reset" value="重 置">
+  </form>
+  <h2>区块元素</h2>
+<div>Hello</div>
+<div>World</div>
+<p>单独一行</p>
+<h3>下面的元素将在一行中显示</h3>
+<span>姓名：</span>
+<input name="username">
+<span>哈哈哈</span>
+<a href="https://google.com/">Google</a>
+<img src="https://mdbootstrap.com/img/logo/mdb192x192.jpg">
+<!-- pre标签中的内容将保持格式不变 -->
+<pre>
+  我如果爱你——
+  绝不象攀援的凌霄花，
+  借你的高枝炫耀自己；
+
+  我如果爱你——
+  绝不学痴情的鸟儿，
+  为绿荫重复单调的歌曲；
+
+  也不止像泉源，
+  常年送来清凉的慰藉；
+
+  也不止像险峰，
+  增加你的高度，衬托你的威仪。
+
+  甚至日光。
+  甚至春雨。
+
+  不，这些都还不够！
+  我必须是你近旁的一株木棉，
+  作为树的形象和你站在一起。
+
+  根，紧握在地下，
+  叶，相触在云里。
+
+  每一阵风过，
+  我们都互相致意，
+  但没有人，
+  听懂我们的言语。
+
+  你有你的铜枝铁干，
+  像刀，像剑，
+  也像戟；
+
+  我有我红硕的花朵，
+  像沉重的叹息，
+  又像英勇的火炬。
+
+  我们分担寒潮、风雷、霹雳；
+  我们共享雾霭、流岚、虹霓。
+  仿佛永远分离，
+  却又终身相依。
+
+  这才是伟大的爱情，
+  坚贞就在这里：
+  爱——
+  不仅爱你伟岸的身躯，
+  也爱你坚持的位置，足下的土地。
+</pre>
+<p>有多          远，滚                         多远！</p>
+<pre>
+  <h1>这是个一级标题</h1>
+  <p>这是一个段落<p>
+  <a href="https://twitter.com/">眼见何事，情系何处，身处何方，心思何人</a>
+<pre>
+  <p>有多&nbsp;&nbsp;&nbsp;远，滚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多远！</p>
+<hr>
+<h2>test.html</h2>
+<pre>
+  &lt;h1&gt;这是个一级标题&lt;/h1&gt;
+  &lt;p&gt;这是一个段落&lt;p&gt;
+  &lt;a href="https://twitter.com/"&gt;眼见何事，情系何处，身处何方，心思何人&lt;/a&gt;
+<pre>
+  <img src="test.jpg">
+</body>
+</html>
