@@ -1,194 +1,639 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>页面标题</title>
-</head>
-<body>
-    <img src="https://mdbootstrap.com/img/logo/mdb192x192.jpg" alt="MDB Logo" width="200" height="200">
-  <h1>我的第一个Web页</h1>
-  <p>当前有点丑：)</p>
-  <!-- 带属性的段落输入框 -->
-  <p title="这是个title属性">鼠标移上来试试！</p>
-  <!-- 带属性的输入框 -->
-  <input type="text">
-  <input type="password">
-  <h1>This is heading 1</h1>
-  <p>This is some text.</p>
-  <hr>
-  <h2>This is heading 2</h2>
-  <p>This is some other text.</p>
-  <hr>
-  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-  <p><del>This line of text is meant to be treated as deleted text.</del></p>
-  <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-  <p><u>This line of text will render as underlined</u></p>
-  <p><small>This line of text is meant to be treated as fine print.</small></p>
-  <p><strong>This line rendered as bold text.</strong></p>
-  <p><em>This line rendered as italicized text.</em></p>
-  <a href="https://www.baidu.com/" target="_blank">百度一下</a>
-  <!-- 文档其余部分 -->
-  <h2 id="C4">第四章 论零号病人的重要性</h2>
-  <!-- 文档其余部分 -->
-  <a href="#C4">跳到第四章</a>
-  <!-- 文档其余部分 -->
-  ...
-  <table>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
-  <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ul>
-  <ul type="square">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ul>
-  <ol>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
-  <ol type="a">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
-  <form>
-    <!-- 文本框，注意有 placeholder 提示符 -->
-    用户名：<br>
-    <input type="text" name="name" placeholder="请输入用户名"><br>
-    <!-- 密码框 -->
-    密码：<br>
-    <input type="password" name="ps" placeholder="请输入密码"><br>
-    年龄：<br>
-    <!-- 数字输入框，注意 min 和 value 属性-->
-    <input type="number" name="age" min="0" value="18"><br>
-    <!-- 单选按钮, 注意 checked 属性 -->
-    性别：<br>
-    <input type="radio" name="gender" value="male" checked> 男<br>
-    <input type="radio" name="gender" value="female"> 女<br>
-    <input type="radio" name="gender" value="other"> 其它<br>
-    <!-- 下拉列表，注意 selected 属性 -->
-    党派：<br>
-    <select name="party">
-      <option value="D">民主党</option>
-      <option value="R" selected>共和党</option>
-      <option value="N">无党派</option>
-    </select><br>
-    <!-- 多选框 -->
-    您有哪些交通工具：<br>
-    <input type="checkbox" name="vehicle1" value="Bike"> 自行车<br>
-    <input type="checkbox" name="vehicle2" value="Motocycle" checked> 摩托车<br>
-    <input type="checkbox" name="vehicle3" value="Car"> 轿车<br>
-    <input type="checkbox" name="vehicle4" value="Jet"> 飞机<br>
-    <!-- 日期选择器 -->
-    您的工作日期：<br>
-    <input type="date"><br>
-    <!-- 文件选择器 -->
-    上传您的照片:<br>
-    <input type="file" name="photo"><br>
-    <!-- 文本输入区域，注意 rows 和 cols 属性 -->
-    您的建议：<br>
-    <textarea name="message" rows="5" cols="30">
-      The cat was playing in the garden.
-    </textarea><br><hr>
-    <!-- 表单提交/重置按钮，将表单中的数据取消或传输给服务器端进行处理 -->
-    <input type="submit" value="提 交">
-    <input type="reset" value="重 置">
-  </form>
-  <h2>区块元素</h2>
-<div>Hello</div>
-<div>World</div>
-<p>单独一行</p>
-<h3>下面的元素将在一行中显示</h3>
-<span>姓名：</span>
-<input name="username">
-<span>哈哈哈</span>
-<a href="https://google.com/">Google</a>
-<img src="https://mdbootstrap.com/img/logo/mdb192x192.jpg">
-<!-- pre标签中的内容将保持格式不变 -->
-<pre>
-  我如果爱你——
-  绝不象攀援的凌霄花，
-  借你的高枝炫耀自己；
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="Spider-Man.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  我如果爱你——
-  绝不学痴情的鸟儿，
-  为绿荫重复单调的歌曲；
+    <title>Woo的主页</title>
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+  </head>
+  <body>
 
-  也不止像泉源，
-  常年送来清凉的慰藉；
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> Woo的页面</a>
+      <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
 
-  也不止像险峰，
-  增加你的高度，衬托你的威仪。
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">This</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Is</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">a</a>
+          </li>
+         
+        
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Button</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</section>
+ <!--  Main banner section -->
+ <section class="w3l-main-banner" id="home">
+  <div class="companies20-content">
+    <div class="companies-wrapper">
+        <div class="item">
+         
+            <div class="slider-info banner-view text-center">
+              <div class="banner-info container">
+                <img src="assets/images/c1.jpg" alt="about image" class="img-fluid">
+                <h3 class="banner-text mt-5">Woo的Web页面
+                  </h3>
+                  <p class="my-4 mb-5"></p><br>
+               
+              </div>
+            </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+ <!--  //Main banner section -->
+<section class="w3l-about ">
+<div class="skills-bars py-5">
+ <div class="container py-md-3">
+  <div class="heading text-center mx-auto">
+    <h3 class="head">漫威影业</h3>
+    <p class="my-3 head"> Marvel Studios is an American television and film studio owned by Walt Disney Pictures, headquartered in Burbank, California</p>
+      
+    </div>
+<div class="row mt-5 pt-3">
+    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Iron Man</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 50% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+    <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+        <h4>Spider-Man</h4>
+        <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+</div>
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>CAPTAIN AMERICA</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 60% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>Scarlet Witch</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 70% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+<div class="col-lg-4  col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+    <h4>Thor</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids ">
+    <h4>Doctor Strange</h4>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80% ;height:4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  </div>
+</div>
+</div>
 
-  甚至日光。
-  甚至春雨。
+ </div>
+ </div>
+</div>
+ </section>
+<section class="w3l-feature-3" id="features">
+	<div class="grid top-bottom">
+		<div class="container">
+			<div class="heading text-center mx-auto">
+                <h3 class="head text-white">漫威影业</h3>
+                <p class="my-3 head text-white"> Marvel Studios is an American television and film studio owned by Walt Disney Pictures, headquartered in Burbank, California</p>
+              </div>
+			<div class="middle-section grid-column text-center mt-5 pt-3">
+				<div class="three-grids-columns">
+					<span class="fa fa-paint-brush"></span>
+					<h4>蜘蛛侠</h4>
+					<p>Spider-man name Peter Benjamin parker, is an ordinary student in the United States, become a horn daily a journalist after graduation Due to the accident was a highly radioactive spider bites of infection, thus obtained and spiders superpowers superhuman endurance responsive and speed And web launcher, incarnation spider-man guard in New York</p>
+					
+				</div>
+				<div class="three-grids-columns">
+					<span class="fa fa-ils"></span>
+					<h4>钢铁侠</h4>
+					<p>Tony stark is a billionaire industrialist, from father took over the huge estate, Tony hasn't shied away from his own rich constantly chauffeured noble identity, because he knew that helps him drawbacks in the company of women When inherited the stark the name have to bear the responsibility, but his real interest in the invention, but also the scientific community accepted genius inventor</p>
+					
+				</div>
+				<div class="three-grids-columns">
+					<span class="fa fa-camera"></span>
+					<h4>美国队长</h4>
+					<p>Steve Rogers was born on July 4, 1918 in brooklyn, New York in the United States, was a thin young body, in the United States after transforming of the government, as the super soldiers physical ability are far superior people, by the American government also given by one of the world's most hard metal gold shield, and led the attack in world war ii has qualified</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="products-4" id="portfolio">
+    <!-- Products4 block -->
+    <div id="products4-block" class="text-center">
+        <div class="container">
+            <div class="heading text-center mx-auto mb-5">
+                <h3 class="head">Marvel Studios</h3>
+                <p class="my-3 head"> Marvel Studios is an American television and film studio owned by Walt Disney Pictures, headquartered in Burbank, California</p>
+              </div>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label class="tabtle" for="tab1">Iron Man</label>
 
-  不，这些都还不够！
-  我必须是你近旁的一株木棉，
-  作为树的形象和你站在一起。
+            <input id="tab2" type="radio" name="tabs">
+            <label class="tabtle" for="tab2">Spider-Man</label>
 
-  根，紧握在地下，
-  叶，相触在云里。
+            <input id="tab3" type="radio" name="tabs">
+            <label class="tabtle" for="tab3">Captain America</label>
 
-  每一阵风过，
-  我们都互相致意，
-  但没有人，
-  听懂我们的言语。
+            <input id="tab4" type="radio" name="tabs">
+            <label class="tabtle" for="tab4">Doctor Strange</label>
 
-  你有你的铜枝铁干，
-  像刀，像剑，
-  也像戟；
+            <section id="content1" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href="assets/images/g1.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/g1.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/g2.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/g2.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/g3.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/g3.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/g4.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/g4.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/g5.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/g5.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/g6.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/g6.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </section>
 
-  我有我红硕的花朵，
-  像沉重的叹息，
-  又像英勇的火炬。
+            <section id="content2" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href="assets/images/s1.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/s1.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/s2.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/s2.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/s3.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/s3.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/s4.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/s4.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/s5.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/s5.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/s6.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/s6.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
 
-  我们分担寒潮、风雷、霹雳；
-  我们共享雾霭、流岚、虹霓。
-  仿佛永远分离，
-  却又终身相依。
+            <section id="content3" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href="assets/images/cm1.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/cm1.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                      
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/cm2.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/cm2.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                       
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/cm3.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/cm3.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                      <a href="assets/images/cm4.jpg" data-lightbox="example-set"
+                          data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                          <figure>
+                              <img src="assets/images/cm4.jpg" class="img-responsive" alt="" />
+                          </figure>
+                      </a>
+                      
+                  </div>
+                  <div class="product">
+                    <a href="assets/images/cm5.jpg" data-lightbox="example-set"
+                        data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                        <figure>
+                            <img src="assets/images/cm5.jpg" class="img-responsive" alt="" />
+                        </figure>
+                    </a>
+                    
+                </div>
+                <div class="product">
+                  <a href="assets/images/cm6.jpg" data-lightbox="example-set"
+                      data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                      <figure>
+                          <img src="assets/images/cm6.jpg" class="img-responsive" alt="" />
+                      </figure>
+                  </a>
+                  
+              </div>
+                </div>
+            </section>
 
-  这才是伟大的爱情，
-  坚贞就在这里：
-  爱——
-  不仅爱你伟岸的身躯，
-  也爱你坚持的位置，足下的土地。
-</pre>
-<p>有多          远，滚                         多远！</p>
-<pre>
-  <h1>这是个一级标题</h1>
-  <p>这是一个段落<p>
-  <a href="https://twitter.com/">眼见何事，情系何处，身处何方，心思何人</a>
-<pre>
-  <p>有多&nbsp;&nbsp;&nbsp;远，滚&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多远！</p>
-<hr>
-<h2>test.html</h2>
-<pre>
-  &lt;h1&gt;这是个一级标题&lt;/h1&gt;
-  &lt;p&gt;这是一个段落&lt;p&gt;
-  &lt;a href="https://twitter.com/"&gt;眼见何事，情系何处，身处何方，心思何人&lt;/a&gt;
-<pre>
-  <img src="test.jpg">
+            <section id="content4" class="tab-content text-left">
+                <div class="d-grid grid-col-3">
+                    <div class="product">
+                        <a href="assets/images/ds1.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/ds1.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                        <a href="assets/images/ds2.jpg" data-lightbox="example-set"
+                            data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                            <figure>
+                                <img src="assets/images/ds2.jpg" class="img-responsive" alt="" />
+                            </figure>
+                        </a>
+                        
+                    </div>
+                    <div class="product">
+                      <a href="assets/images/ds3.jpg" data-lightbox="example-set"
+                          data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                          <figure>
+                              <img src="assets/images/ds3.jpg" class="img-responsive" alt="" />
+                          </figure>
+                      </a>
+                      
+                  </div>
+                  <div class="product">
+                    <a href="assets/images/ds4.jpg" data-lightbox="example-set"
+                        data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                        <figure>
+                            <img src="assets/images/ds4.jpg" class="img-responsive" alt="" />
+                        </figure>
+                    </a>
+                    
+                </div>
+                <div class="product">
+                  <a href="assets/images/ds5.jpg" data-lightbox="example-set"
+                      data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                      <figure>
+                          <img src="assets/images/ds5.jpg" class="img-responsive" alt="" />
+                      </figure>
+                  </a>
+                  
+              </div>
+              <div class="product">
+                <a href="assets/images/ds6.jpg" data-lightbox="example-set"
+                    data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex veritatis">
+                    <figure>
+                        <img src="assets/images/ds6.jpg" class="img-responsive" alt="" />
+                    </figure>
+                </a>
+                
+            </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Products4 block -->
+</div>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+<section class="services-12" id="experience">
+	<div class="form-12-content">
+		<div class="container">
+			<div class="grid grid-column-2 ">
+				
+				<div class="column1">
+          <h3 class="mb-5">Iron Man series</h3>
+					<div class="experience-top">
+            <h5>2008</h5>
+						<h4>Iron Man I</h4>
+						<p class="my-3 text-white">The film tells the story of Tony Stark after a kidnapping incident to improve the function of armor, incarnation of Iron Man, as a vigilante to protect the world peace story</p>
+            </div>
+            <div class="experience-top">
+              <h5>2010</h5>
+              <h4>Iron Man II</h4>
+              <p class="my-3 text-white">The film mainly tells the story of Tony became Iron Man and faced three new problems, competition from Hammer Industries, revenge from the old enemy Ivan, and his own palladium poisoning, he finally solved these problems one by one</p>
+              </div>
+              <div class="experience-top">
+                <h5>2013</h5>
+                <h4>Iron Man III</h4>
+                <p class="my-3 text-white">Told the story of Tony Stark's life was destroyed by the enemy, there is no way back he must rely on sophisticated high-tech equipment and extraordinary intelligence, protect themselves and the people closest to him, while finding out the real culprit behind the story</p>
+                </div>
+					</div>
+					<div class="column2">
+            <h3 class="mb-5">Captain America series</h3>
+            <div class="experience-top">
+              <h5>2011</h5>
+              <h4>Captain America I</h4>
+              <p class="my-3 text-white">A frail recruit, who was transformed into a supersoldier in an experiment, then fell into the sea and was frozen for nearly 70 years in an operation at the end of World War II, where he fought his Nemesis, the Red Skull</p>
+              </div>
+              <div class="experience-top">
+                <h5>2014</h5>
+                <h4>Captain America II</h4>
+                <p class="my-3 text-white">Tells the story of the SHIELD chief was attacked before the director of the shield out of the mountain the ship of the sky destroyed again, Captain America in this piece of shocking ruins, the story of the tide</p>
+                </div>
+                <div class="experience-top">
+                  <h5>2016</h5>
+                  <h4>Captain America III</h4>
+                  <p class="my-3 text-white">Tells the story of a series of political problems caused by the Ultron event, leading to the internal contradictions of the Avengers, and finally completely split the story</p>
+                  </div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="w3l-testimonials" id="testimonials">
+  <div class="customers-6-content py-5">
+    <div class="container py-lg-3">
+      <div class="heading text-center mx-auto">
+        <h3 class="head">Part of the actor</h3>
+        <p class="my-3 head "> The success of Marvel films depends on the right choice of actors</p>
+      </div>
+     
+      <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+          <li data-target="#customerhnyCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#customerhnyCarousel" data-slide-to="1"></li>
+                      
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner pb-5">
+
+          <div class="carousel-item active">
+            <div class="customer row py-5 mt-3">
+              <div class="col-lg-4 col-md-6">
+                <div class="card">
+                 
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/th.jpg" alt="">
+                    <h3 class="card-title mt-2">Tom Holland</h3>
+                    <p class="sub-title mb-3">Spider-Man</p>
+                    <p class="card-text">  Born in the UK, Tom Holland learned to dance at a young age and became known for his role as Billy in the musical "Out of the World". In 2012, he was widely praised for his outstanding performance in the film "Miracle of the Tsunami". He was shortlisted for the 2012 British Rising Star and the 2012 Youth Influence Report, and won the 2012 Hollywood Spotlight Award
+                    </p>
+                  
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 off-testi-2">
+                <div class="card">
+                
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/rdj.jpg" alt="">
+                    <h3 class="card-title mt-2">Robert Downey Jr.</h3>
+                    <p class="sub-title mb-3">Iron Man</p>
+                    <p class="card-text">  In 1970, five-year-old Robert Downey Jr. appeared in his first film, dog life. In 1985, with the film "hot boy" and "modern nanny" to come to the fore. In 1987, he starred for the first time in the romantic comedy "the babysitter.". In 1992, he starred in the biographical film Chaplin, so he was shortlisted for the best actor award of the 65th Academy Awards
+                    </p>
+                    
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
+                <div class="card">
+                  
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/ce.jpg" alt="">
+                    <h3 class="card-title mt-2">Chris Evans</h3>
+                    <p class="sub-title mb-3">Captain America</p>
+                    <p class="card-text">  Born in Boston, Massachusetts on June 13, 1981, he is an American actor and director. In 2000, Chris Evans starred in CBS series "the end of the world", which is his first TV series. In 2001, Chris starred in the comedy film very men and women. In 2005, Chris starred in the science fiction film magic four, and in 2007, Chris starred in the sequel of the series magic four 2: Silver man
+                     </p>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--.item-->
+
+          <div class="carousel-item">
+            <div class="customer row py-5 mt-3">
+              <div class="col-lg-4 col-md-6">
+                <div class="card">
+                 
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/ch.jpg" alt="">
+                    <h3 class="card-title mt-2">Chris Hemsworth</h3>
+                    <p class="sub-title mb-3">Thor</p>
+                    <p class="card-text">  Born in Melbourne, Australia, Aug. 11, 1983, Australian actor. In 2004, he was acting in the first personal TV series "gathering and breaking up and breaking up". In 2009, he participated in the science fiction film star trek. In 2011, he starred in the science fiction action film "thunder god" and entered Hollywood with the help of the thunder star
+                    </p>
+                  
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 off-testi-2">
+                <div class="card">
+                 
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/bc.jpg" alt="">
+                    <h3 class="card-title mt-2">Benedict Cumberbatch</h3>
+                    <p class="sub-title mb-3">Doctor Strange</p>
+                    <p class="card-text">  In 2000, conberbach began his acting career in the TV series heartbeat. In 2010, he began to star in the TV series "detective Shylock". By virtue of the series, he won many best actor awards such as Emmy Award, golden Satellite Award, and was also nominated for best actor of Golden Globe Award. In 2011, he won the Oliver award and other best actor awards
+                     </p>
+                  
+                    
+                  </div>
+                </div>
+                
+                
+              </div>
+              <div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 off-testi">
+                <div class="card">
+                 
+                  <div class="card-body">
+                    <img class="card-img-top img-responsive" src="assets/images/mar.jpg" alt="">
+                    <h3 class="card-title mt-2">Mark Alan Ruffalo</h3>
+                    <p class="sub-title mb-3">Hulk</p>
+                    <p class="card-text"> In 1994, he participated in the first film "forbidden to magic mirror 2: Black Dance" . In 2000, starring in the family movie and won the 26th Los Angeles Film Critics Association Award for the Best Newcomer Award. In 2004, the love film "girl dream 30" was released. In 2007, he led the suspense film "the twelve palaces" with Robert Downey Jr. In 2010, his director's first work
+                    </p>
+                   
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+           
+
+        </div>
+        <!--.carousel-inner-->
+      </div>
+    </div>
+  </div>
+  <!--//customers -->
+</section>
+ 
+ <!-- grids block 5 -->
+ <section class="w3l-footer-29-main" id="footer">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29">
+                    
+          <a href="#qq" class="qq"><span class="fa fa-qq"></span></a>
+          <a href="#wechat" class="wechat"><span class="fa fa-wechat"></span></a>
+      </div>
+          <div class="bottom-copies text-center">
+              <p class="copy-footer-29">© 2021 Woo Website. </a></p>
+               
+          </div>
+      </div>
+  </div>
+</section>
+<!-- // grids block 5 -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- //footer-28 block -->
+</section>
+
+<script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+<!-- Smooth scrolling -->
+
+
+
 </body>
+
 </html>
+<!-- // grids block 5 -->
